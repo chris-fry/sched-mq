@@ -4,12 +4,14 @@
 This is a program that stores AMQP messages and sends them at a specific time or as soon as possible after that time.
 
 ## Requirements:
+
 * Python 3.* (runs the API for message management and the daemon that sends messages)
 * Python Eve (supports the API for message management)
 * MongoDB (stores messages to be sent)
 * At least one AMQP queue (to receive messages)
 
 ## How it works:
+
 * A user or system creates a message using the API, which has a simple schema including a send date/time
 * The message is stored in MongoDB
 * The Daemon watches polls MongoDB, checking for messages due to be sent (messages created with a past date/time are sent immediately)
@@ -17,15 +19,7 @@ This is a program that stores AMQP messages and sends them at a specific time or
 * The Daemon continues to check for messages
 * The source code includes a testing script that can be used to monitor a queue
 
-## Example:
-
-### Create a message:
-*To be completed*
-
-### Message received using test script:
-*To be completed*
-
-## Building a PoC (Tested on Ubuntu 16.04) (*detail to be completed*):
+## Build Guide and Examples (tested on Ubuntu 16.04) (*detail to be completed*):
 1. Install pre-requisites:
   * Python3
   * Python-Eve
