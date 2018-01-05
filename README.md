@@ -25,7 +25,7 @@ This is a program that stores AMQP messages and sends them at a specific time or
 ### Message received using test script:
 *To be completed*
 
-## Building a PoC (Tested on Ubuntu 16.04):
+## Building a PoC (Tested on Ubuntu 16.04) (*detail to be completed*):
 1. Install pre-requisites:
   * Python3
   * Python-Eve
