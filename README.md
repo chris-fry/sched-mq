@@ -47,7 +47,7 @@ The following command, used throughout these examples returns the current date/t
 
 ``` date "+%s" ```
 
-Create test message to execute right now, should be sent and received within about 1 second:
+Create test message to be delivered now, should be sent and received within about 1 second:
 
 ``` let now=`date "+%s"` ```
 
@@ -84,4 +84,4 @@ Delete test message in distant future:
 *To be completed...*
 
 ## API specification:
-The API schema is defined as an Eve settings file in `api_settings.py`. This is a reasonably lean python script that should be fairly simple to understand for anyone used to working with API's.
+The API schema is defined as an Eve settings file in `api_settings.py`. This is a reasonably lean Python script that should be fairly simple to understand for anyone used to working with API's.
