@@ -26,7 +26,7 @@ def run_daemon():
 def get_next_message():
   message = db[messages_collection].find_one(
     filter={},
-    sort=[('datetime', ASCENDING)]
+    sort=[('datetime', ASCENDING), ('_id', ASCENDING)]
   )
   return(message)
 
