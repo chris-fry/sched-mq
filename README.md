@@ -47,7 +47,7 @@ The following command, used throughout these examples returns the current date/t
 
 ``` date "+%s" ```
 
-Create test message to execute right now, should be sent and received within about 1 second:
+Create test message to be delivered now, should be sent and received within about 1 second:
 
 ``` let now=`date "+%s"` ```
 
