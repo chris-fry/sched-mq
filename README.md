@@ -84,4 +84,4 @@ Delete test message in distant future:
 *To be completed...*
 
 ## API specification:
-The API schema is defined as an Eve settings file in `api_settings.py`. This is a reasonably lean Python script that should be fairly simple to understand for anyone used to working with API's.
+The API schema is defined as an Eve settings file in `api_settings.py`. This is a reasonably lean Python script that should be fairly easy to understand for anyone used to working with API's.
