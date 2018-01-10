@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 from eve import Eve
 app = Eve(settings='api_settings.py')
 
