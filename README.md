@@ -135,7 +135,7 @@ Date: Tue, 16 Jan 2018 13:22:54 GMT
 {"_links": {"self": {"title": "Message", "href": "messages/5a5dfcaebce3ac0bc8cb0687"}}, "_updated": "Tue, 16 Jan 2018 13:22:54 GMT", "_status": "OK", "_etag": "c1698343d62afece7dc561250e1ba26371c2d09b", "_created": "Tue, 16 Jan 2018 13:22:54 GMT", "_id": "5a5dfcaebce3ac0bc8cb0687"}
 ```
 
-Create example message to be sent in 1 year (365.25 days), shouldn't be sent until that date:
+Create example message to be sent in 1 year (365.25 days, or 31557600 seconds), shouldn't be sent until that date:
 
 ```
 $ let one_year_in_future=`date "+%s"`+31557600
