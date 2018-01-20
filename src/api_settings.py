@@ -32,9 +32,9 @@ messages_schema = {
   'topics': {
     'type': 'string'
   },
-  # Message as string
+  # Message as JSON object (Python dict)
   'message': {
-    'type': 'string',
+    'type': 'dict',
     'required': True
   }
 }

@@ -1,4 +1,5 @@
 import pika, daemon_settings
+from json import dumps
 from pymongo import ASCENDING, MongoClient
 from time import sleep, strftime, time
 
@@ -40,7 +41,7 @@ def publish(message):
     channel.basic_publish(
       exchange=message['exchange'],
       routing_key=message['queue'],
-      body=message['message']
+      body=dumps(message['message'])
     )
     print("{} - sent: {}".format(globals()['message_count'] + 1, message['message']))
     connection.close()
